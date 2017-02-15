@@ -13,6 +13,10 @@ brew tap caskroom/versions
 
 brew install zsh
 brew install git
+brew install wget
+brew install vim
+brew install node
+brew install yarn
 
 # apps
 

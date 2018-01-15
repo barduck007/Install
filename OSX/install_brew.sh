@@ -22,7 +22,7 @@ brew install yarn
 
 brew cask install dropbox
 brew cask install spotify
-brew cask install franz # slack, messenger, ...
+brew cask install rambox # slack, messenger, ...
 brew cask install iterm2
 brew cask install vlc
 brew cask install atom
@@ -30,7 +30,6 @@ brew cask install google-chrome
 brew cask install phpstorm
 brew cask install dashlane
 brew cask install virtualbox
-brew cask install vagrant
 
 ## Usage stats network / cpu /ram
 brew cask install yujitach-menumeters

@@ -1,32 +1,10 @@
-ulimit -n 1024
-#
-# Executes commands at the start of an interactive session.
-#
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
-
-# Source Prezto.
-if [[ -s "${ZDOTDIR:-$HOME}/dotfiles/cli/zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/dotfiles/cli/zprezto/init.zsh"
-fi
-
 if [[ -f $HOME/.github_token ]]
 then
   export GITHUB_TOKEN=$(cat $HOME/.github_token)
 fi
 
-# added by travis gem
-[ -f /Users/sbalayn/.travis/travis.sh ] && source /Users/sbalayn/.travis/travis.sh
-
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
-export GOPATH=/Users/sbalayn/gocode
 export PATH="$PATH:`yarn global bin`"
-export NVM_DIR="$HOME/.nvm"
-. "$(brew --prefix nvm)/nvm.sh"
 
-alias fuck='sudo $(history -p \!\!)'
-alias git=hub
-
-source "$HOME/dev/overblog/Docker/src/docker.sh"
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+OB_PATH_WORKSPACE="$HOME/Projects"
+source "$HOME/Projects/Docker/src/docker.sh"

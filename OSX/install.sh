@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 -e
 
 echo "Activation du SUDO "
@@ -14,4 +14,5 @@ if ! type "zsh" > /dev/null; then
   . zsh/install.sh
 fi
 
-zsh ./zshinstall
+echo "Installation de Brew et des applications"
+. install_brew.sh

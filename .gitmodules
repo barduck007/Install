@@ -1,3 +1,0 @@
-[submodule "OSX/zsh/.zprezto"]
-	path = cli/.zprezto
-	url = https://github.com/sorin-ionescu/prezto.git

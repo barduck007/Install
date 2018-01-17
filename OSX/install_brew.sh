@@ -22,7 +22,8 @@ brew install yarn
 
 brew cask install dropbox
 brew cask install spotify
-brew cask install rambox # slack, messenger, ...
+brew cask install slack
+brew cask install rambox # Skype, Whatsapp, messenger, ...
 brew cask install iterm2
 brew cask install vlc
 brew cask install atom

@@ -31,6 +31,7 @@ brew cask install google-chrome
 brew cask install phpstorm
 brew cask install dashlane
 brew cask install virtualbox
+brew cask install filezilla
 
 ## Usage stats network / cpu /ram
 brew cask install yujitach-menumeters

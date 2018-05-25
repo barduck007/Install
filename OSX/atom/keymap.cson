@@ -3,3 +3,4 @@
   'ctrl-tab ^ctrl': 'unset!'
   'ctrl-shift-tab': 'pane:show-previous-item'
   'ctrl-shift-tab ^ctrl': 'unset!'
+  'ctrl-shift-d': 'find-and-replace:select-all'

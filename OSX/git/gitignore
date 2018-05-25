@@ -15,3 +15,9 @@
 *.ipr
 *.iws
 .idea/
+
+# SYMFONY
+*/app/cache/
+*/var/cache/
+*/app/logs/
+*/var/logs/

@@ -10,3 +10,4 @@ zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 cat $HOME/Projects/Install/OSX/zsh/zshrc >> $HOME/.zshrc
+cat $HOME/Projects/Install/OSX/zsh/zsh_aliases >> $HOME/.zsh_aliases

@@ -7,4 +7,7 @@ export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export PATH="$PATH:`yarn global bin`"
 
 OB_PATH_WORKSPACE="$HOME/Projects"
-source "$HOME/Projects/Docker/src/docker.sh"
+
+if [ -f ~/.zsh_aliases ]; then
+    . ~/.zsh_aliases
+fi

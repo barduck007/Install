@@ -11,3 +11,8 @@ OB_PATH_WORKSPACE="$HOME/Projects"
 if [ -f ~/.zsh_aliases ]; then
     . ~/.zsh_aliases
 fi
+
+bindkey "[D" backward-word
+bindkey "[C" forward-word
+bindkey "^[a" beginning-of-line
+bindkey "^[e" end-of-line

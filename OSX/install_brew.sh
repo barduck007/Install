@@ -15,6 +15,7 @@ brew install zsh
 brew install git
 brew install wget
 brew install vim
+brew install gnupg
 brew install node
 brew install yarn
 

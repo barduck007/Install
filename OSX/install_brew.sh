@@ -3,10 +3,8 @@
 
 brew update
 brew upgrade
-brew prune
 brew cleanup
 
-brew tap homebrew/dupes
 brew tap homebrew/core
 brew tap caskroom/cask
 brew tap caskroom/versions
@@ -21,25 +19,25 @@ brew install yarn
 
 # apps
 
-brew cask install dropbox
-brew cask install spotify
-brew cask install slack
-brew cask install rambox # Skype, Whatsapp, messenger, ...
-brew cask install iterm2
-brew cask install vlc
-brew cask install atom
-brew cask install google-chrome
-brew cask install phpstorm
-brew cask install dashlane
-brew cask install virtualbox
-brew cask install filezilla
+brew install dropbox
+brew install spotify
+brew install slack
+brew install rambox # Skype, Whatsapp, messenger, ...
+brew install iterm2
+brew install vlc
+brew install atom
+brew install google-chrome
+brew install phpstorm
+brew install dashlane
+brew install virtualbox
+brew install filezilla
 
 ## Usage stats network / cpu /ram
-brew cask install yujitach-menumeters
+brew install yujitach-menumeters
 ## VPN client
-brew cask install tunnelblick
+brew install tunnelblick
 ## SSH tunnel manager
-brew cask install ssh-tunnel-manager
+brew install ssh-tunnel-manager
 
 #brew cask install cloud
 #brew cask install hammerspoon

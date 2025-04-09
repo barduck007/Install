@@ -26,8 +26,14 @@ brew install vlc
 brew install atom
 brew install google-chrome
 brew install phpstorm
+
+# Docker & utilities
 brew install docker
 brew install lazydocker
+
+# Kubernetes client et k9s pour manager son cluster Kubernetes
+brew install kubectl
+brew install derailed/k9s/k9s
 
 ## Usage stats network / cpu /ram
 brew install yujitach-menumeters

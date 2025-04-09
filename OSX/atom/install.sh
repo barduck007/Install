@@ -1,3 +1,6 @@
+#!/usr/bin/env bash
+set -e
+
 mkdir -p ~/.atom
 ln -s $(pwd)/keymap.cson ~/.atom/keymap.cson
 

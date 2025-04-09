@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
--e
+set -e
 
 echo "Activation du SUDO "
 sudo -v
 
 echo "Installation de Homebrew"
 if ! type "brew" > /dev/null; then
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 if ! type "zsh" > /dev/null; then

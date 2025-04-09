@@ -1,5 +1,5 @@
-#!/bin/sh
--e
+#!/usr/bin/env bash
+set -e
 
 brew update
 brew upgrade
@@ -18,7 +18,6 @@ brew install node
 brew install yarn
 
 # apps
-
 brew install dropbox
 brew install spotify
 brew install slack
@@ -27,7 +26,8 @@ brew install vlc
 brew install atom
 brew install google-chrome
 brew install phpstorm
-brew install dashlane
+brew install docker
+brew install lazydocker
 
 ## Usage stats network / cpu /ram
 brew install yujitach-menumeters
@@ -35,4 +35,3 @@ brew install yujitach-menumeters
 brew install tunnelblick
 ## SSH tunnel manager
 brew install ssh-tunnel-manager
-

@@ -19,7 +19,6 @@ brew install yarn
 
 # apps
 brew install dropbox
-brew install spotify
 brew install slack
 brew install iterm2
 brew install vlc

@@ -17,8 +17,14 @@ fi
 echo "Installation de Brew et des applications"
 ./install_brew.sh
 
+echo "Spotify et Spotdl"
+./install_spotify.sh
+
 echo "MAJ de Atom"
 ./atom/install.sh
+
+echo "Installation de Sublime Text 2 + Meld"
+./sublime-text/install.sh
 
 echo "Création du gitignore global"
 git config --global core.excludesfile ~/.gitignore_global

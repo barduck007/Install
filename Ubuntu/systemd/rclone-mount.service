@@ -5,10 +5,10 @@ After=network.target
 [Service]
 Type=notify
 User=1000
-ExecStart=/usr/bin/rclone mount Google_Drive:/ ~/Google_Drive \
+ExecStart=/usr/bin/rclone mount Google_Drive:/ /home/nicolas-mignard/Google_Drive \
   --poll-interval 1m \
   --timeout 1h
-ExecStop=/bin/fusermount -uz ~/Google_Drive
+ExecStop=/bin/fusermount -uz /home/nicolas-mignard/Google_Drive
 Restart=on-failure
 RestartSec=5
 

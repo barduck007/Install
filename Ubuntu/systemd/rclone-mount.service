@@ -1,0 +1,16 @@
+[Unit]
+Description=Rclone Mount Google Drive
+After=network.target
+
+[Service]
+Type=notify
+User=1000
+ExecStart=/usr/bin/rclone mount Google_Drive:/ ~/Google_Drive \
+  --poll-interval 1m \
+  --timeout 1h
+ExecStop=/bin/fusermount -uz ~/Google_Drive
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

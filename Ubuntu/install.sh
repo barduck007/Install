@@ -15,7 +15,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 # Installation de Ghostty (Terminal Ubuntu)
 sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mkasberg/ghostty-ubuntu/HEAD/install.sh)"
-cp -f ./ghostty-configuration.conf ~/.config/ghostty/config
+ln -sf $(pwd)/ghostty-configuration.conf ~/.config/ghostty/config
 
 # Keymap options list: https://ghostty.org/docs/config/reference#command
 

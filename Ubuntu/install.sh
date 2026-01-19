@@ -41,10 +41,13 @@ brew install sops
 ############## Snap et ses dépendances ###############
 
 # Installation de Spotify
-snap install spotify
+sudo snap install spotify
 
 # Installation de Slack
 sudo snap install slack
+
+# Installation de OpenTofu (Terraform like)
+sudo snap install --classic opentofu
 
 ##########################################################
 

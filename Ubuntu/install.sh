@@ -110,3 +110,5 @@ sudo apt install playerctl
 # Pour ajouter l'autocomplétion Kubectl, ajouter la ligne suivante dans bashrc:
 echo "source <(kubectl completion bash)" >> ~/.zshrc
 echo "source <(kubectl completion bash)" >> ~/.bashrc
+
+cat .zshrc >> ~/.bashrc

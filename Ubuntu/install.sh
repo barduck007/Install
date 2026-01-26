@@ -6,6 +6,8 @@ apt upgrade
 
 sudo apt install build-essential procps curl file git ca-certificates vim
 
+git config --global core.editor "vim"
+
 #############################################
 ############## Ghostty et ZSH ###############
 
@@ -33,8 +35,11 @@ echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.zshrc
 # Installation de Lazydocker
 brew install lazydocker
 
-# Installation de sops (équivalent de GPG pour chiffrer/déchiffrer des fichiers
+# Installation de sops (équivalent de GPG pour chiffrer/déchiffrer des fichiers)
 brew install sops
+
+# Installation de act (utilitaire pour jouer des github actions en local avec Docker)
+brew install act
 ##########################################################
 
 ##########################################################
@@ -64,6 +69,7 @@ sudo apt-get update && sudo apt-get install google-cloud-cli
 curl "https://storage.googleapis.com/cloud-sql-connectors/cloud-sql-proxy/v2.20.0/cloud-sql-proxy.linux.amd64" -o cloud-sql-proxy
 chmod +x cloud-sql-proxy
 sudo mv cloud-sql-proxy /usr/local/bin/
+sudo apt install postgresql-client
 ###########################################
 
 ##########################################################

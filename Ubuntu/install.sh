@@ -86,7 +86,18 @@ Signed-By: /etc/apt/keyrings/docker.asc
 EOF
 sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-##########################################################
+####################################################################################
+
+####################################################################################
+################# Installation des outils de gestion de Kubernetes #################
+
+# Installation de Lens: https://docs.k8slens.dev/k8slens/getting-started/install-lens/#
+curl -fsSL https://downloads.k8slens.dev/keys/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/lens-archive-keyring.gpg > /dev/null
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/lens-archive-keyring.gpg] https://downloads.k8slens.dev/apt/debian stable main" | sudo tee /etc/apt/sources.list.d/lens.list > /dev/null
+sudo apt update && sudo apt install lens
+# Pour lancer lens: $lens-desktop
+
+####################################################################################
 
 # Installation de Netbird VPN
 curl -fsSL https://pkgs.netbird.io/install.sh | sh

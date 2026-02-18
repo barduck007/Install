@@ -1,0 +1,16 @@
+# Fichiers système macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Fichiers temporaires
+*.log
+*.tmp
+
+# Fichiers IDE
+.vscode/
+.idea/
+
+# Fichiers swap
+*.swp

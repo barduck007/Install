@@ -7,6 +7,8 @@ apt upgrade
 sudo apt install build-essential procps curl file git ca-certificates vim
 
 git config --global core.editor "vim"
+ln -s $(pwd)/git/.gitignore ~/.gitignore
+git config --global core.excludesfile ~/.gitignore
 
 #############################################
 ############## Ghostty et ZSH ###############

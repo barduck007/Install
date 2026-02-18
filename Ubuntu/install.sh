@@ -40,6 +40,9 @@ brew install sops
 
 # Installation de act (utilitaire pour jouer des github actions en local avec Docker)
 brew install act
+
+# Installation du CLI de l'IA d'Open AI
+brew install codex
 ##########################################################
 
 ##########################################################
